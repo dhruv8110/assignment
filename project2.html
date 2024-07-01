@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle,up,down</title>
+
+    <style>
+        div p {
+            /* height: 300px;
+            /* width: 350px; */ 
+           
+        
+           
+            background-color: orangered;
+            border-radius: 5px;
+            text-align: center;
+            padding: 50px;
+            display: none;
+        }
+       .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+       
+       
+
+       }
+       .same{
+        height: 30px;
+        width: 170px;
+        border-radius: 10px;
+        background-color: red;
+        font-style:oblique;
+      
+       }
+       .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       margin-top: 200px;
+       }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <div class="main">
+    <div>
+        <p>
+            Hello,My Name is dhruv patel.
+        </p>
+      
+    </div>
+    <div class="button">
+        <button class="toggle same ">SlideToggle</button>
+        <button class="up same">SlideUp</button>
+        <button class="down same">SlideDown</button>
+    </div>
+</div>   
+</body>
+
+<script>
+$(document).ready(function () {
+    $(".toggle").click(function () {
+        $("p").slideToggle(1000)
+        
+    })
+    $(".up").click(function () {
+        $("p").slideUp(1000)
+        
+    })
+    $(".down").click(function () {
+        $("p").slideDown(1000)
+        
+    })
+    
+})
+
+</script>
+
+</html>

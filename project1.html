@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #myDiv
+    {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+
+    #myDiv1
+    {
+        height: 100px;
+        width: 100px;
+        background-color: chocolate;
+    }
+
+    #myDiv2
+    {
+        height: 100px;
+        width: 100px;
+        background-color: wheat;
+    }
+
+    #myDiv3
+    {
+        height: 100px;
+        width: 100px;
+        background-color: royalblue;
+    }
+
+    #myDiv4
+    {
+        height: 100px;
+        width: 100px;
+        background-color: chartreuse;
+    }
+
+    #myDiv5
+    {
+        height: 100px;
+        width: 100px;
+        background-color: darkseagreen;
+    }
+
+    #myDiv6
+    {
+        height: 100px;
+        width: 100px;
+        background-color: olivedrab;
+    }
+   #dhruv
+   {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    justify-content: space-around;
+    align-content: center;
+    background-color: blue;
+   }
+</style>
+<body>
+    <main id="dhruv">
+    <div id="myDiv">1</div>
+    <div id="myDiv1">2</div>
+    <div id="myDiv2">3</div>
+    <div id="myDiv3">4</div>
+    <div id="myDiv4">5</div>
+    <div id="myDiv5">6</div>
+    </main>
+    
+    
+    <button id="changeColor" onmouseenter="click()">Change Background Color</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv').css('background-color', 'yellow');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv1').css('background-color', 'green');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv2').css('background-color', 'red');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv3').css('background-color', 'pink');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv4').css('background-color', 'black');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#changeColor').click(function() {
+                $('#myDiv5').css('background-color', 'darkpink');
+            });
+        });
+    </script>
+</body>
+</html>

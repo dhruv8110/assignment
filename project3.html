@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery Assignment</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      div {
+        height: 50px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 50px;
+      }
+     
+     
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="password" id="input" />
+      <button value="show">show</button>
+    
+    </div>
+    
+   
+  </body>
+  <script>
+    //Create hide and show password by using  Jquery
+    $(document).ready(function () {
+        $("button").click(function () {
+           var value = $(input);
+           if(value.attr("type")=="password"){
+            value.attr("type","text")
+            $("button").text("hide")
+
+           }else{
+            value.attr("type","password") 
+            $("button").text("show")
+           }
+        })
+        
+    })
+
+    
+
+    
+  </script>
+</html>
